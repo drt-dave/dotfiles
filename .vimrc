@@ -11,7 +11,7 @@ set clipboard=unnamedplus
 set showcmd ruler
 set cursorline cursorcolumn
 set showmatch
-set sw=2 ts=4
+set sw=2 ts=2 expandtab
 set laststatus=2 noshowmode
 set hlsearch
 set splitbelow splitright
@@ -63,6 +63,9 @@ inoremap <Leader>,, <LT>
 inoremap <Leader>.. >
 nnoremap <leader>ff :Files!<CR>
 nnoremap <leader>fl :BLines!<CR>
+"Buffer navigation
+nnoremap <Leader>k :bnext<CR>
+nnoremap <Leader>j :bprevious<CR>
 
 " CoC + snippets
 inoremap <silent><expr> <TAB>
